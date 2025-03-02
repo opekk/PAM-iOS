@@ -1,7 +1,21 @@
 import SwiftUI
+struct ContentView: View {
+    var body: some View {
+        NavigationStack {
+            VStack(alignment: .center) {
+                HStack {
+                    NavigationLink("View 1", destination: Zadanie_1_1())
+                    NavigationLink("View 2", destination: Zadanie_1_2())
+                        .padding()
+                }
+            }
+        }
+    }
+}
 
 
-struct firstView: View {
+
+struct Zadanie_1_1: View {
     var dni = ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"]
     @State var dzien: String = ""
     @State var dzienWybor: String = ""
@@ -18,7 +32,7 @@ struct firstView: View {
 }
 
 
-struct secondView: View{
+struct Zadanie_1_2: View{
     @State var liczba1: String = ""
     @State var liczba2: String = ""
     @State var wynik: String = ""
