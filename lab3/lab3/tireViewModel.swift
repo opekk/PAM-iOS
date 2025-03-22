@@ -5,6 +5,7 @@ class TireViewModel: ObservableObject {
     @Published var selectedSize: String = "" {
         didSet { selectedBrand = "" } // Resetuj markę po zmianie rozmiaru
     }
+    
     @Published var selectedBrand: String = ""
     @Published var quantity: String = ""
     @Published var message: String = ""

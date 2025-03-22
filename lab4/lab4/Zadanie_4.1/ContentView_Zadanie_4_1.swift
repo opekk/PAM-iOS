@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView_Zadanie_4_1: View {
     
     
     @State var walutaKupiona: waluty = .pln

@@ -11,7 +11,7 @@ import SwiftUI
 struct lab4App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView_Zadanie_4_2()
         }
     }
 }

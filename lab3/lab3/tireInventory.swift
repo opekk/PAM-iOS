@@ -8,6 +8,11 @@ struct TireInventory {
     ]
     
     func isAvailable(size: String, brand: String, quantity: Int) -> Bool {
-        return (stock[size]?[brand] ?? 0) >= quantity
+        guard let availableStock = stock[size]?[brand] else {
+            return false
+        }
+        return availableStock >= quantity
     }
 }
+   
+
